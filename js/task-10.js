@@ -31,5 +31,6 @@ function getRandomHexColor() {
 }
 
 function destroyBoxes() {
-    boxForBoxes.textContent = ''
+	boxForBoxes.textContent = ''
+	inputEl.value = ''
 }
