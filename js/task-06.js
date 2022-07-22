@@ -5,5 +5,6 @@ validationInputEl.addEventListener('blur', (event) => {
         validationInputEl.classList.remove('invalid')
         return validationInputEl.classList.add('valid')
     }
+    validationInputEl.classList.remove('valid')
     return validationInputEl.classList.add('invalid')
 })

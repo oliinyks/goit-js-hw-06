@@ -4,17 +4,14 @@ const createEl = mainDivEl.querySelector('[data-create]')
 const destroyEl = mainDivEl.querySelector('[data-destroy]')
 const boxForBoxes = document.querySelector('#boxes')
 
-inputEl.addEventListener('input', GetValue)
 createEl.addEventListener('click', createBoxes)
 destroyEl.addEventListener('click', destroyBoxes)
 
-function GetValue(number) {
-    const inputValue = number.currentTarget.value
-    createBoxes(inputValue)
-}
+
+const basicSize = 30
 
 function createBoxes(amount) {
-    const basicSize = 30
+	 amount = inputEl.value
     const fragment = document.createDocumentFragment()
 
     for (let i = 0; i < amount; i += 1) {
